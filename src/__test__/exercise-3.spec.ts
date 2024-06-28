@@ -1,9 +1,9 @@
-import { sortByAge } from "./sortByAge"
-import { sortByExperience } from "./sortByTotalExperience"
+import { sortByAge } from '../exercise-3/sortByAge'
+import { sortByExperience } from '../exercise-3/sortByTotalExperience'
 
 describe('Exercise 3', () => {
   const personDataMock = [
-   {
+    {
       id: '1',
       name: 'Marta',
       surname: 'Carrillo',
@@ -13,7 +13,7 @@ describe('Exercise 3', () => {
         { speciality: 'backend programmer', experienceDays: '500' },
         { speciality: 'backend programmer', experienceDays: '500' },
       ],
-    }, 
+    },
     {
       id: '2',
       name: 'Juan Carlos',
@@ -33,7 +33,6 @@ describe('Exercise 3', () => {
         { speciality: 'fullstack programmer', experienceDays: '365' },
       ],
     },
-    
   ]
   it('Sort by age, given an array of persons, return the array sorted by age', () => {
     const sortedByAge = sortByAge(personDataMock)
@@ -48,4 +47,3 @@ describe('Exercise 3', () => {
     expect(sortedByAge[2].id).toBe('1')
   })
 })
-

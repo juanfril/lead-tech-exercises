@@ -1,5 +1,5 @@
-import { getLibraryData as manualApproach } from './manualApproach'
-import { getLibraryData as promisifyApproach } from './promisifyApproach'
+import { getLibraryData as manualApproach } from '../exercise-2/manualApproach'
+import { getLibraryData as promisifyApproach } from '../exercise-2/promisifyApproach'
 
 describe('Manual library wrapper', () => {
   it('Return a message with valid key if key is valid', async () => {
